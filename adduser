@@ -70,7 +70,7 @@ done
 
 # Create the home directory
 echo "Creating home directory..."
-createhomedir -c 2>&1 | grep -v "shell-init"
+createhomedir -c -u $USERNAME 2>&1 | grep -v "shell-init"
 
 echo "Created user #$USERID: $USERNAME ($FULLNAME)"
 
